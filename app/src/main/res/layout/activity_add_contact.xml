@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContact">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="90dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/person"
+            android:layout_marginTop="30dp"
+            app:civ_border_width="5dp"
+            app:civ_border_color="@android:color/holo_blue_dark"
+            android:id="@+id/add_imageaccount"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/add_imageaccount"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:inputType="text"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:id="@+id/contactName"
+                android:hint=" Contact Name"/>
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/contactName"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext"
+                android:id="@+id/contactNumber"
+                android:inputType="number"
+
+                android:hint=" Contact Number"/>
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/contactNumber"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext"
+                android:id="@+id/emailContact"
+                android:hint=" Email"/>
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailContact"
+                android:text="Add Contact"
+                android:id="@+id/addcontact"
+                android:layout_margin="30dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:background="@drawable/buttondesign"/>
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".StartActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:layout_centerHorizontal="true"
+        android:text="Contact App"
+        android:id="@+id/text"
+        android:textSize="50sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="150dp"
+        android:background="@drawable/buttondesign"
+        android:text="Sign In"
+        android:layout_below="@id/text"
+        android:id="@+id/signIn"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="140dp"
+        android:background="@drawable/buttondesign"
+        android:text="SignUp"
+        android:layout_below="@id/signIn"
+        android:id="@+id/signUp"
+        android:textColor="@android:color/white"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>
